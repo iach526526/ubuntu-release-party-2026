@@ -238,14 +238,34 @@ layout: two-cols-header
 
 # 如何安裝各種軟體
 
-- APT：官方套件管理工具
-- DEB：Debian / Ubuntu 安裝檔
-- Snap：Ubuntu 官方推廣的跨版本套件
-- AppImage：免安裝可執行檔
-- flatpak
-- BIN / SH：手動執行安裝程式
-- 原始碼編譯：進階使用者方式
+App Center / APT → Snap / Flatpak → 官方 DEB → AppImage → BIN/SH → 原始碼編譯
+| 方式         | 最適合誰               |          建議程度 |
+| ---------- | ------------------ | ------------: |
+| App Center | 一般桌面使用者            |             高 |
+| APT        | Ubuntu 標準方式、穩定可靠   |            很高 |
+| DEB        | 官網提供的 Ubuntu 安裝檔   |             高 |
+| Snap       | Ubuntu 桌面 App、簡單安裝 |             高 |
+| Flatpak    | Flathub 軟體、生態豐富    |            中高 |
+| AppImage   | 免安裝、攜帶式            |             中 |
+| BIN / SH   | 廠商安裝器              |            中低 |
+| 原始碼編譯      | 開發者、進階需求           | 低，除非你知道自己在做什麼 |
 
+---
+transition: slide-up
+---
+
+## App Center
+
+- Ubuntu 的「應用商店」(可以理解成 microsoft store、Google play 商店)
+- 自動呼叫背後的套件管理系統來安裝軟體
+
+![App Center](./img/2026-05-10-22-48-58.png)
+---
+
+## APT
+
+![App Center](./img/apt.webp)
+---
 
 |                                                     |                             |
 | --------------------------------------------------- | --------------------------- |
@@ -277,6 +297,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 image: ./img/miku.webp
 layout: image-right
 backgroundSize: contain
+transition: slide-up
 ---
 
 ## 來安裝酷酷的動態桌布！
@@ -301,8 +322,7 @@ EOF
 ```
 ---
 
-- 把影片預先放在 `~/Videos/Hidamari`  就可以選中播放，也可以設定隨機輪播
-- 
+把影片預先放在 `~/Videos/Hidamari`  就可以選中播放，也可以設定隨機輪播或播放影片、網頁
 
 ![Hidamari UI](./img/2026-05-10-22-17-32.png)
 ---
@@ -310,7 +330,7 @@ EOF
 # 輸入法
 我都用[小麥注音](https://github.com/openvanilla/fcitx5-mcbopomofo)
 
-- 需要自己編譯，參考[官方文件](https://github.com/openvanilla/fcitx5-mcbopomofo/blob/master/README.md#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F)複製貼上
+- 小麥需要自己編譯，參考[官方文件](https://github.com/openvanilla/fcitx5-mcbopomofo/blob/master/README.md#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F)複製貼上
   - 別怕真的很簡單，複製貼上而已
 - 不想自己編譯可以安裝新酷音
 ---
@@ -321,6 +341,7 @@ EOF
 ![compile](./img/2026-05-10-18-56-08.png)
 
 ---
+
 # Setup
 
 ```bash
@@ -340,6 +361,9 @@ sudo update-icon-caches /usr/share/icons/*
 
 ---
 
+## 安裝輝達驅動
+
+---
 # 如何移機
 - Windows
   - 備份資料，覆蓋系統碟（ C 槽）
@@ -353,7 +377,7 @@ layout: intro
 ---
 
 ## 演示時間
-
+以我的舊 Window 10 筆電為例
 ---
 
 # 參考資料（推薦閱讀）
@@ -361,6 +385,8 @@ layout: intro
 - [談flatpak 等安裝格式原理](https://forum.gamer.com.tw/C.php?bsn=60030&snA=630254)
 - [受够了 MacOS，我给 Macbook 装上了 Linux](https://blog.l3zc.com/2023/11/installing-ubuntu-on-macbook/)
 - [Linux on MacBook experience](https://www.youtube.com/watch?v=GiXHkRc8axM)
+- [Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
+- [鳥哥的學習私房手冊-linux_basic](https://linux.vbird.org/linux_basic/centos7/0105computers.php)
 ---
 
 # 參考資料（看不完的那種）
