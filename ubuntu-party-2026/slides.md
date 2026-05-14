@@ -21,8 +21,8 @@ transition: slide-left
 # enable Comark Syntax: https://comark.dev/syntax/markdown
 comark: true
 # duration of the presentation
-duration: 35min
-
+duration: 80min
+favicon: ./img/Ubuntu-icon.png
 ---
 
 # Ubuntu release Party
@@ -65,6 +65,7 @@ transition: fade-out
   - steam
   - 快捷鍵最佳化
   - 展示黑魔法
+
 ---
 title: 什麼是作業系統
 transition: slide-up
@@ -97,6 +98,30 @@ backgroundSize: contain
   - Bell Labs 退出 Multics 計劃
   - 研究員 Ken Thompson 開發出小型系統 Unics（後更名為 UNIX）
   - 此時 UNIX 是使用 Assembly 撰寫
+
+---
+transition: slide-up
+---
+
+## 馮紐曼架構（Von Neumann Architecture）
+
+![Von Neumann Architecture](./img/2026-05-14-12-22-27.png)
+
+---
+transition: slide-up
+---
+
+## 電腦的主機板們
+
+![Mini-ITX](./img/2026-05-14-12-50-02.png)
+
+---
+transition: slide-left
+---
+
+## 電腦的元件堆疊
+![電腦的架構](./img/2026-05-14-12-44-50.png)
+
 
 ---
 transition: slide-up
