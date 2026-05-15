@@ -45,6 +45,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 transition: fade-out
 ---
+
 # 最近的我
 
 - 中興大學興大二村 115 學年度宿舍網管
@@ -176,6 +177,12 @@ backgroundSize: contain
 - 1983 微軟推出第一款視窗系統
 
 ---
+layout: 
+---
+## 發行版
+
+
+---
 lauyout: center
 ---
 
@@ -208,17 +215,36 @@ h1 {
 }
 </style>
 
+
+---
+layout: two-cols
 ---
 
-# 如何開始 Linux?
+## UbuCon Asia 2026 @ COSCUP
+- 8/8~8/9
+- 入場免費
+- 在臺灣科技大學
+- 歡迎來玩XD
+
+> 細節見：coscup.org/2026/
+
+::right::
+
+![ubuntu-tw](./img/2026-05-15-18-17-10.png)
+
+
+---
+
+# 如何學習使用 Linux?
 - X 記下所有指令
-- Ｏ 直接安裝，把電腦打扮成可愛小男娘
+- Ｏ 直接安裝，~~把電腦打扮成可愛小男娘~~，每天用就會了
+- 不要放棄思考、查詢、學習，了解所有事件邏輯的因果關係
 
 ---
 layout: two-cols-header
 ---
 
-# Graphical User Interface, GUI
+## Graphical User Interface, GUI
 - 點點按按
 ::left::
 ![mac OS deskto](./img/2026-05-10-18-42-42.png)
@@ -234,6 +260,12 @@ layout: two-cols-header
 </style>
 ---
 layout: two-cols-header
+---
+
+## command-line interface,CLI
+
+![terminal](./img/2026-05-15-19-03-21.png)
+
 ---
 
 ## Graphical User Interface, GUI on Linux
@@ -264,17 +296,23 @@ layout: two-cols-header
 # 如何安裝各種軟體
 
 App Center / APT → Snap / Flatpak → 官方 DEB → AppImage → BIN/SH → 原始碼編譯
-| 方式         | 最適合誰               |          建議程度 |
-| ---------- | ------------------ | ------------: |
-| App Center | 一般桌面使用者            |             高 |
-| APT        | Ubuntu 標準方式、穩定可靠   |            很高 |
-| DEB        | 官網提供的 Ubuntu 安裝檔   |             高 |
-| Snap       | Ubuntu 桌面 App、簡單安裝 |             高 |
-| Flatpak    | Flathub 軟體、生態豐富    |            中高 |
-| AppImage   | 免安裝、攜帶式            |             中 |
-| BIN / SH   | 廠商安裝器              |            中低 |
-| 原始碼編譯      | 開發者、進階需求           | 低，除非你知道自己在做什麼 |
 
+| Linux / Ubuntu 方式  | 類比 Windows                     | 說明                                    |
+| ------------------ | ----------------------------------- | ------------------------------------- |
+| **DEB**            | **`.msi` 或安裝用 `.exe`**              | 官網下載後安裝進系統，例如 Chrome、Discord 的 `.deb` |
+| **AppImage**       | **可攜式 `.exe`**                      | 下載後直接執行，不太需要正式安裝，像 Windows 可攜式軟體    |
+| **BIN / SH**       | **廠商自製安裝器 `.exe`**                  | 比較像「下一步、下一步」那種安裝程式，但在 Linux 可能是腳本     |
+| **APT**            | **Microsoft Store / winget / 軟體倉庫** | 幫你下載、安裝、更新軟體的工具              |
+| **App Center**     | **Microsoft Store**                 | 圖形化軟體商店                               |
+| **Snap / Flatpak** | **Microsoft Store App / 沙盒化 App**   | 比較像由平台管理、可自動更新、隔離程度較高的 App            |
+| **原始碼編譯**          | **自己拿程式碼 build 成 exe**              | You are real geek!                        |
+
+<style>
+  td{
+    font-size:0.8rem;
+
+  }
+</style>
 ---
 transition: slide-up
 ---
@@ -286,28 +324,68 @@ transition: slide-up
 
 ![App Center](./img/2026-05-10-22-48-58.png)
 ---
-
-## APT
-
-![App Center](./img/apt.webp)
+layout: two-cols
+transition: slide-up
 ---
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+## APT(Advanced Package Tool)
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+- 幫你下載、安裝、更新軟體的工具
+- 通常會去「軟體倉庫」找對應的 .deb
+::right::
 
+![App Center](./img/apt.webp)
+
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+## 什麼是軟體倉庫
+
+- 官方或可信任的倉庫貨架，會上架很多軟體
+- 鏡像站把國外的軟體倉庫定期複製到台灣，讓你下載更快
+  - [NCHC 國網中心](https://free.nchc.org.tw/pmwiki/pmwiki.php/FSLab/MirrorLists?utm_source=chatgpt.com)
+  - [NYCU CSIT / 交大資工鏡像站](https://it.cs.nycu.edu.tw/equipment-linux-mirror?utm_source=chatgpt.com)
+
+::right::
+
+![software & update](./img/2026-05-15-18-43-10.png)
+
+<style>
+img{
+  width:110%;
+}
+
+</style>
+---
+layout: two-cols-header
+---
+
+## deb
+::left::
+
+
+- 包含一個軟體安裝時需要的東西
+  - 程式本體
+  - 圖示
+  - 設定檔
+  - 安裝說明
+  - 版本資訊
+  - 相依套件清單
+
+::right::
+![discord indtall use deb](./img/2026-05-15-16-59-59.png)
+
+<div id="under-img">Discord 就是提供 deb 安裝</div>
+
+<style>
+#under-img{
+  text-align:center;
+}
+
+</style>
 ---
 
 ## [flatpak](https://flatpak.org/setup/)
@@ -389,6 +467,7 @@ sudo update-icon-caches /usr/share/icons/*
 ## 安裝輝達驅動
 
 ---
+
 # 如何移機
 - Windows
   - 備份資料，覆蓋系統碟（ C 槽）
