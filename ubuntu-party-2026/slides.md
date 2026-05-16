@@ -376,12 +376,58 @@ layout: two-cols
 
 ---
 
-# Linux 常見的桌面環境
-- GNONE
-- KDE
-- xfce
-- i3
-- hyperland
+## 更多 Linux 桌面環境！
+
+<div grid="~ cols-2">
+<div>
+<figure class="w-[75%]">
+<img src="./img/i3-3.png" alt="i3">
+<figcaption>
+<a href="https://i3wm.org/"><strong>i3</strong></a>
+</figcaption>
+</figure>
+</div>
+
+<div>
+<figure class="w-[75%]">
+<img src="./img/hyperland.webp" alt="GNOME" />
+<figcaption>
+<a href="https://hypr.land/"><strong>hyperland</strong></a>
+</figcaption> 
+</figure>
+</div>
+</div>
+
+<div grid="~ cols-2">
+<div>
+<figure class="w-[75%]">
+<img src="./img/xfce.jpg" alt="xfce">
+<figcaption>
+<a href="https://kde.org"><strong>xfce</strong></a>
+</figcaption>
+</figure>
+</div>
+
+<div>
+<figure class="w-[75%]">
+<img src="./img/Cinnamon_eng.png" alt="Cinnamon" />
+<figcaption>
+<a href="https://cinnamon-spices.linuxmint.com/"><strong>Cinnamon</strong></a>
+</figcaption>
+</figure>
+</div>
+</div>
+
+<style>
+div{
+  font-size:0.9em;
+}
+figcaption
+{
+  text-align:center;
+}
+
+  </style>
 ---
 
 # 我接觸 Linux 的經驗
@@ -530,8 +576,18 @@ EOF
 ![Hidamari UI](./img/2026-05-10-22-17-32.png)
 ---
 
+
+## 文書作業
+
+- Office-> Libre office
+- Adobe Acrobat Reader -> Evince、Okular、Loupe
+
+- 
+
+---
+
 # 輸入法
-我都用[小麥注音](https://github.com/openvanilla/fcitx5-mcbopomofo)
+我都用[小麥注音](https://github.com/openvanilla/fcitx5-mcbopomofo)，你可以裝[新酷音](https://chewing.im/download.html)就可以不用編譯
 
 - 小麥需要自己編譯，參考[官方文件](https://github.com/openvanilla/fcitx5-mcbopomofo/blob/master/README.md#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F)複製貼上
   - 別怕真的很簡單，複製貼上而已
