@@ -652,12 +652,13 @@ layout: two-cols
 layoutClass: gap-x-12
 ---
 
-## 安裝輝達驅動
+## 安裝 Nvidia驅動 （以 RTX3060 為例）
 
-- 找到驅動版本，但不要用 .run  安裝，使用 apt 
+- [找到驅動版本](https://www.nvidia.com/en-us/drivers/)，但不要用 .run  安裝，使用 apt 
 
 ```bash
-ubuntu-drivers devices
+ubuntu-drivers devices # 偵測合適的版本
+sudo apt install nvidia-driver-595-open nvidia-utils-595
 
 ```
 
@@ -665,6 +666,12 @@ ubuntu-drivers devices
 
 ![search man](./img/2026-05-16-15-14-48.png)
 
+<style>
+
+img{
+  width:80%;
+}
+  </style>
 
 ---
 
