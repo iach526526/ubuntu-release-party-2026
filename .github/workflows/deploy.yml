@@ -40,7 +40,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
-          external_repository: slide.iach.cc/ubnparty2026
+          external_repository: iach526526/ubuntu-release-party-2026
           publish_branch: gh-pages
           publish_dir: ubuntu-party-2026/dist
           destination_dir: ubnparty2026
