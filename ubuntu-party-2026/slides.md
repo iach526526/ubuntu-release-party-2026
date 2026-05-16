@@ -14,6 +14,8 @@ info: |
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
+download: true
+lineNumbers: true
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
@@ -23,6 +25,7 @@ comark: true
 # duration of the presentation
 duration: 80min
 favicon: ./img/Ubuntu-icon.png
+aspectRatio: 16/9
 ---
 
 # Ubuntu release Party
@@ -33,7 +36,7 @@ favicon: ./img/Ubuntu-icon.png
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
+  <a href="https://github.com/iach526526" target="_blank" class="slidev-icon-btn">
     <carbon:logo-github />
   </a>
 </div>
@@ -51,7 +54,7 @@ transition: fade-out
 - 中興大學興大二村 115 學年度宿舍網管
 - SITCON 2026 場務組物流股長
 - COSCUP 2026 場務組組長
-- emfont 主要貢獻者
+- NYCU 軟體開發社 HPC team
 
 > email: info AT iach.cc <br>
 > blog: www.iach.cc
@@ -67,8 +70,53 @@ transition: fade-out
   - 快捷鍵最佳化
   - 展示黑魔法
 
+
 ---
-title: 什麼是作業系統
+layout: section
+transition: slide-up
+---
+
+## 如何和電腦溝通？
+
+你的意圖怎麼傳到硬體運算
+
+---
+transition: slide-up
+layout: two-cols
+layoutClass: gap-x-12
+---
+
+## 電腦的主機板們
+
+![Mini-ITX](./img/2026-05-14-12-50-02.png)
+
+::right::
+
+![電腦的架構](./img/2026-05-14-12-44-50.png)
+
+
+---
+layout: two-cols-header
+---
+
+## ISA, Instruction Set Architecture 
+
+::left::
+- x86-64
+- ARM64
+- RISC-V
+
+::right::
+
+![電腦的架構](./img/2026-05-14-12-44-50.png)
+
+<style>
+  img{
+    width:90%  
+  }
+</style>
+
+---
 transition: slide-up
 layout: intro
 level: 2
@@ -82,8 +130,6 @@ level: 2
 ---
 transition: slide-up
 layout: image-right
-
-# Unix 家族演進
 image: ./img/2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
@@ -96,9 +142,16 @@ backgroundSize: contain
   - Bell Labs (AT&T)、MIT、GE 合作
   - 開發大型多人多工系統 → 奠定現代 OS 基礎
 - Late 1960s：UNIX 誕生
-  - Bell Labs 退出 Multics 計劃
   - 研究員 Ken Thompson 開發出小型系統 Unics（後更名為 UNIX）
   - 此時 UNIX 是使用 Assembly 撰寫
+
+---
+transition: slide-up
+layout: image
+image: ./img/2026-05-16-13-14-25.png
+---
+
+
 
 ---
 transition: slide-up
@@ -108,27 +161,21 @@ transition: slide-up
 
 ![Von Neumann Architecture](./img/2026-05-14-12-22-27.png)
 
----
-transition: slide-up
----
-
-## 電腦的主機板們
-
-![Mini-ITX](./img/2026-05-14-12-50-02.png)
 
 ---
-transition: slide-left
+layout: two-cols
 ---
+## 馮紐曼瓶頸
+- CPU 計算速度 >>> Memory 存取速度
+- 使用 Memory Hierarchy 緩解 
 
-## 電腦的元件堆疊
-![電腦的架構](./img/2026-05-14-12-44-50.png)
+::right::
+![Memory Hierarchy](./img/2026-05-16-09-11-31.png)
 
 
 ---
 transition: slide-up
 layout: image-right
-
-# Unix 家族演進
 image: ./img/2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
@@ -147,8 +194,6 @@ backgroundSize: contain
 ---
 transition: slide-up
 layout: image-right
-
-# Unix 家族演進
 image: ./img/2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
@@ -163,8 +208,6 @@ backgroundSize: contain
 
 ---
 layout: image-right
-
-# Unix 家族演進
 image: ./img/2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
@@ -175,13 +218,104 @@ backgroundSize: contain
   - Linux Torvalds 發布開源核心 Linux + 採用 GNU 的授權與工具  + BSD 與 AT&T 正在打官司 → Linux 迅速成為全球開發者協作的首選
 - Linux 採用 GNU 的授權與工具 → 奠定現代開源商業與開發模式 
 - 1983 微軟推出第一款視窗系統
+---
+layout: two-cols
+---
+
+## Recall
+- 作業系統的歷史
+- 作業系統
+  - 和硬體溝通的軟體
+
+::right::
+
+![os and program stack](./img/2026-05-16-09-00-49.png)
 
 ---
-layout: 
+
+## command-line interface,CLI
+
+![terminal](./img/2026-05-15-19-03-21.png)
+
 ---
-## 發行版
+
+## Graphical User Interface, GUI
+- 點點按按
+
+<div grid="~ cols-2">
+<div>
+<figure class="w-[75%]">
+<img src="./img/2026-05-10-13-17-03.png" alt="KDE Plasma">
+<figcaption>
+<a href="https://kde.org"><strong>KDE Plasma</strong></a>, 由 KDE  社群開發
+</figcaption>
+</figure>
+</div>
+
+<div>
+<figure class="w-[75%]">
+<img src="./img/2026-05-16-11-55-34.png" alt="GNOME" />
+<figcaption>
+<a href="https://www.gnome.org/"><strong>GNOME</strong></a>,由 GNOME 基金會和貢獻者開發
+</figcaption>
+</figure>
+</div>
+</div>
+
+<div grid="~ cols-2">
+
+<div>
+<figure class="w-[75%]">
+<img src="./img/2026-05-10-18-42-42.png" alt="macOs desktop" />
+<figcaption>
+<a href="https://en.wikipedia.org/wiki/Aqua_(user_interface)"><strong>macOs Aqua</strong></a>, 由蘋果公司開發
+</figcaption>
+</figure>
+</div>
+
+<div>
+<figure class="w-[75%]">
+<img src="./img/2026-05-10-18-45-54.png" alt="Windows desktop">
+<figcaption>
+<a href="https://en.wikipedia.org/wiki/Windows_shell"><strong>Windows Shell</strong></a>, 由微軟開發
+</figcaption>
+</figure>
+</div>
+
+</div>
+
+<style>
+div{
+  font-size:0.9em;
+}
+figcaption
+{
+  text-align:center;
+}
+
+  </style>
 
 
+---
+transition: slide-up
+---
+
+## Linux 發行版
+
+- 作業系統
+  - 人和硬體之間的軟體
+  - CLI
+  - GUI
+
+- Linux
+  - 作業系統的核心部分
+  - 負責和硬體溝通
+  - 不是完整桌面系統
+
+- 發行版
+  - 包裝好的 Linux 作業系統
+  - 安裝後可以直接使用
+  - 幫你準備好基本工具
 ---
 lauyout: center
 ---
@@ -239,40 +373,6 @@ layout: two-cols
 - X 記下所有指令
 - Ｏ 直接安裝，~~把電腦打扮成可愛小男娘~~，每天用就會了
 - 不要放棄思考、查詢、學習，了解所有事件邏輯的因果關係
-
----
-layout: two-cols-header
----
-
-## Graphical User Interface, GUI
-- 點點按按
-::left::
-![mac OS deskto](./img/2026-05-10-18-42-42.png)
-
-::right::
-
-![](./img/2026-05-10-18-45-54.png)
-
-<style>
-.two-cols-header {
-  column-gap: 20px;
-}
-</style>
----
-layout: two-cols-header
----
-
-## command-line interface,CLI
-
-![terminal](./img/2026-05-15-19-03-21.png)
-
----
-
-## Graphical User Interface, GUI on Linux
-::left::
-::right::
-
-![Linux kde](./img/2026-05-10-13-17-03.png)
 
 ---
 
@@ -491,6 +591,7 @@ layout: intro
 - [Linux on MacBook experience](https://www.youtube.com/watch?v=GiXHkRc8axM)
 - [Ubuntu繁體中文輸入法？改用Fcitx5來輸入中文吧！](https://ivonblog.com/posts/ubuntu-fcitx5/)
 - [鳥哥的學習私房手冊-linux_basic](https://linux.vbird.org/linux_basic/centos7/0105computers.php)
+- [What Are the Components of a Linux Distribution?](https://fosspost.org/what-are-the-components-of-a-linux-distribution)
 ---
 
 # 參考資料（看不完的那種）
