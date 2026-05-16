@@ -1,0 +1,1 @@
+var e=`/ubnparty2026/assets/2026-05-14-12-44-50-BJUtKR2-.png`;export{e as t};
