@@ -23,7 +23,7 @@ transition: slide-left
 comark: true
 # duration of the presentation
 duration: 80min
-favicon: ./img/Ubuntu-icon.png
+favicon: ./public/img//Ubuntu-icon.png
 aspectRatio: 16/9
 ---
 
@@ -87,11 +87,11 @@ layoutClass: gap-x-12
 
 ## 電腦的主機板們
 
-![Mini-ITX](./img/2026-05-14-12-50-02.png)
+![Mini-ITX](./public/img//2026-05-14-12-50-02.png)
 
 ::right::
 
-![電腦的架構](./img/2026-05-14-12-44-50.png)
+![電腦的架構](./public/img//2026-05-14-12-44-50.png)
 
 
 ---
@@ -107,7 +107,7 @@ layout: two-cols-header
 
 ::right::
 
-![電腦的架構](./img/2026-05-14-12-44-50.png)
+![電腦的架構](./public/img//2026-05-14-12-44-50.png)
 
 <style>
   img{
@@ -129,7 +129,7 @@ level: 2
 ---
 transition: slide-up
 layout: image-right
-image: ./img/2026-05-10-12-08-13.png
+image: ./public/img//2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
 
@@ -147,7 +147,7 @@ backgroundSize: contain
 ---
 transition: slide-up
 layout: image
-image: ./img/2026-05-16-13-14-25.png
+image: ./public/img//2026-05-16-13-14-25.png
 ---
 
 
@@ -158,7 +158,7 @@ transition: slide-up
 
 ## 馮紐曼架構（Von Neumann Architecture）
 
-![Von Neumann Architecture](./img/2026-05-14-12-22-27.png)
+![Von Neumann Architecture](./public/img//2026-05-14-12-22-27.png)
 
 
 ---
@@ -169,13 +169,13 @@ layout: two-cols
 - 使用 Memory Hierarchy 緩解 
 
 ::right::
-![Memory Hierarchy](./img/2026-05-16-09-11-31.png)
+![Memory Hierarchy](./public/img//2026-05-16-09-11-31.png)
 
 
 ---
 transition: slide-up
 layout: image-right
-image: ./img/2026-05-10-12-08-13.png
+image: ./public/img//2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
 
@@ -193,7 +193,7 @@ backgroundSize: contain
 ---
 transition: slide-up
 layout: image-right
-image: ./img/2026-05-10-12-08-13.png
+image: ./public/img//2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
 
@@ -207,7 +207,7 @@ backgroundSize: contain
 
 ---
 layout: image-right
-image: ./img/2026-05-10-12-08-13.png
+image: ./public/img//2026-05-10-12-08-13.png
 backgroundSize: contain
 ---
 
@@ -228,13 +228,13 @@ layout: two-cols
 
 ::right::
 
-![os and program stack](./img/2026-05-16-09-00-49.png)
+![os and program stack](./public/img//2026-05-16-09-00-49.png)
 
 ---
 
 ## command-line interface,CLI
 
-![terminal](./img/2026-05-15-19-03-21.png)
+![terminal](./public/img//2026-05-15-19-03-21.png)
 
 ---
 
@@ -244,7 +244,7 @@ layout: two-cols
 <div grid="~ cols-2">
 <div>
 <figure class="w-[75%]">
-<img src="./img/2026-05-10-13-17-03.png" alt="KDE Plasma">
+<img src="./public/img//2026-05-10-13-17-03.png" alt="KDE Plasma">
 <figcaption>
 <a href="https://kde.org"><strong>KDE Plasma</strong></a>, 由 KDE  社群開發
 </figcaption>
@@ -253,7 +253,7 @@ layout: two-cols
 
 <div>
 <figure class="w-[75%]">
-<img src="./img/2026-05-16-11-55-34.png" alt="GNOME" />
+<img src="./public/img//2026-05-16-11-55-34.png" alt="GNOME" />
 <figcaption>
 <a href="https://www.gnome.org/"><strong>GNOME</strong></a>,由 GNOME 基金會和貢獻者開發
 </figcaption>
@@ -265,7 +265,7 @@ layout: two-cols
 
 <div>
 <figure class="w-[75%]">
-<img src="./img/2026-05-10-18-42-42.png" alt="macOs desktop" />
+<img src="./public/img//2026-05-10-18-42-42.png" alt="macOs desktop" />
 <figcaption>
 <a href="https://en.wikipedia.org/wiki/Aqua_(user_interface)"><strong>macOs Aqua</strong></a>, 由蘋果公司開發
 </figcaption>
@@ -274,7 +274,7 @@ layout: two-cols
 
 <div>
 <figure class="w-[75%]">
-<img src="./img/2026-05-10-18-45-54.png" alt="Windows desktop">
+<img src="./public/img//2026-05-10-18-45-54.png" alt="Windows desktop">
 <figcaption>
 <a href="https://en.wikipedia.org/wiki/Windows_shell"><strong>Windows Shell</strong></a>, 由微軟開發
 </figcaption>
@@ -325,13 +325,13 @@ layout: two-cols
 - 大概有幾百個還在活躍的發行版
 - 你也可以做你自己的發行版
 ::right::
-![distribution](./img/2026-05-16-14-30-29.png)
+![distribution](./public/img//2026-05-16-14-30-29.png)
 
 ---
 layout: center
 ---
 
-![choose os](./img/2026-05-16-14-31-06.png)
+![choose os](./public/img//2026-05-16-14-31-06.png)
 
 <style>
 
@@ -387,7 +387,7 @@ layout: two-cols
 
 ::right::
 
-![ubuntu-tw](./img/2026-05-15-18-17-10.png)
+![ubuntu-tw](./public/img//2026-05-15-18-17-10.png)
 
 
 ---
@@ -404,7 +404,7 @@ layout: two-cols
 <div grid="~ cols-2">
 <div>
 <figure class="w-[75%]">
-<img src="./img/i3-3.png" alt="i3">
+<img src="./public/img//i3-3.png" alt="i3">
 <figcaption>
 <a href="https://i3wm.org/"><strong>i3</strong></a>
 </figcaption>
@@ -413,7 +413,7 @@ layout: two-cols
 
 <div>
 <figure class="w-[75%]">
-<img src="./img/hyperland.webp" alt="GNOME" />
+<img src="./public/img//hyperland.webp" alt="GNOME" />
 <figcaption>
 <a href="https://hypr.land/"><strong>hyperland</strong></a>
 </figcaption> 
@@ -424,7 +424,7 @@ layout: two-cols
 <div grid="~ cols-2">
 <div>
 <figure class="w-[75%]">
-<img src="./img/xfce.jpg" alt="xfce">
+<img src="./public/img//xfce.jpg" alt="xfce">
 <figcaption>
 <a href="https://kde.org"><strong>xfce</strong></a>
 </figcaption>
@@ -433,7 +433,7 @@ layout: two-cols
 
 <div>
 <figure class="w-[75%]">
-<img src="./img/Cinnamon_eng.png" alt="Cinnamon" />
+<img src="./public/img//Cinnamon_eng.png" alt="Cinnamon" />
 <figcaption>
 <a href="https://cinnamon-spices.linuxmint.com/"><strong>Cinnamon</strong></a>
 </figcaption>
@@ -453,7 +453,7 @@ figcaption
   </style>
 ---
 
-# 我接觸 Linux 的經驗
+## 我接觸 Linux 的經驗
 1. 學長準備遠端伺服器讓我玩
 2. 為了考證照，第一次使用 Ubuntu 桌面版=>背了一些好長的指令好痛苦啊啊啊
 3. 使用特殊的發行版 kail 練習資安攻擊手法
@@ -462,7 +462,7 @@ figcaption
 
 ---
 
-# 如何安裝各種軟體
+## 如何安裝各種軟體
 
 App Center / APT → Snap / Flatpak → 官方 DEB → AppImage → BIN/SH → 原始碼編譯
 
@@ -491,7 +491,7 @@ transition: slide-up
 - Ubuntu 的「應用商店」(可以理解成 microsoft store、Google play 商店)
 - 自動呼叫背後的套件管理系統來安裝軟體
 
-![App Center](./img/2026-05-10-22-48-58.png)
+![App Center](./public/img//2026-05-10-22-48-58.png)
 ---
 layout: two-cols
 transition: slide-up
@@ -503,7 +503,7 @@ transition: slide-up
 - 通常會去「軟體倉庫」找對應的 .deb
 ::right::
 
-![App Center](./img/apt.webp)
+![App Center](./public/img//apt.webp)
 
 
 ---
@@ -520,7 +520,7 @@ transition: slide-up
 
 ::right::
 
-![software & update](./img/2026-05-15-18-43-10.png)
+![software & update](./public/img//2026-05-15-18-43-10.png)
 
 <style>
 img{
@@ -545,7 +545,7 @@ layout: two-cols-header
   - 相依套件清單
 
 ::right::
-![discord indtall use deb](./img/2026-05-15-16-59-59.png)
+![discord indtall use deb](./public/img//2026-05-15-16-59-59.png)
 
 <div id="under-img">Discord 就是提供 deb 安裝</div>
 
@@ -566,7 +566,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ```
 
 ---
-image: ./img/miku.webp
+image: ./public/img//miku.webp
 layout: image-right
 backgroundSize: contain
 transition: slide-up
@@ -596,7 +596,7 @@ EOF
 
 把影片預先放在 `~/Videos/Hidamari`  就可以選中播放，也可以設定隨機輪播或播放影片、網頁
 
-![Hidamari UI](./img/2026-05-10-22-17-32.png)
+![Hidamari UI](./public/img//2026-05-10-22-17-32.png)
 ---
 
 
@@ -605,8 +605,7 @@ EOF
 - Office-> Libre office
 - Adobe Acrobat Reader -> Evince、Okular、Loupe
 - 小畫家-> inkscape、GIMP、Krita
-- Steam 遊戲 == 裝 [Proton](https://www.protondb.com/) 就可以繼續玩了  
-- 
+- Steam 遊戲 == 裝 [Proton](https://www.protondb.com/) 就可以繼續玩了 
 
 ---
 transition: slide-up
@@ -625,7 +624,7 @@ transition: slide-up
 ## 什麼是「編譯」？
 
 
-![compile](./img/2026-05-10-18-56-08.png)
+![compile](./public/img//2026-05-10-18-56-08.png)
 
 ---
 
@@ -663,7 +662,7 @@ sudo apt install nvidia-driver-595-open nvidia-utils-595
 
 ::right::
 
-![search man](./img/2026-05-16-15-14-48.png)
+![search man](./public/img//2026-05-16-15-14-48.png)
 
 <style>
 
