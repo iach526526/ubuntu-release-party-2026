@@ -14,7 +14,6 @@ info: |
 # apply UnoCSS classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
-download: true
 lineNumbers: true
 drawings:
   persist: false
