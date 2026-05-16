@@ -317,6 +317,30 @@ transition: slide-up
   - 安裝後可以直接使用
   - 幫你準備好基本工具
 ---
+transition: slide-up
+layout: two-cols
+---
+
+## Linux 發行版
+- 沒人知道到底確切有多少發行版
+- 大概有幾百個還在活躍的發行版
+- 你也可以做你自己的發行版
+::right::
+![distribution](./img/2026-05-16-14-30-29.png)
+
+---
+layout: center
+---
+
+![choose os](./img/2026-05-16-14-31-06.png)
+
+<style>
+
+  img{
+    width: 60%;
+  }
+  </style>
+---
 lauyout: center
 ---
 
@@ -369,7 +393,7 @@ layout: two-cols
 
 ---
 
-# 如何學習使用 Linux?
+## 如何學習用 Linux?
 - X 記下所有指令
 - Ｏ 直接安裝，~~把電腦打扮成可愛小男娘~~，每天用就會了
 - 不要放棄思考、查詢、學習，了解所有事件邏輯的因果關係
@@ -581,9 +605,12 @@ EOF
 
 - Office-> Libre office
 - Adobe Acrobat Reader -> Evince、Okular、Loupe
-
+- 小畫家-> inkscape、GIMP、Krita
+- Steam 遊戲 == 裝 [Proton](https://www.protondb.com/) 就可以繼續玩了  
 - 
 
+---
+transition: slide-up
 ---
 
 # 輸入法
@@ -592,6 +619,8 @@ EOF
 - 小麥需要自己編譯，參考[官方文件](https://github.com/openvanilla/fcitx5-mcbopomofo/blob/master/README.md#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F)複製貼上
   - 別怕真的很簡單，複製貼上而已
 - 不想自己編譯可以安裝新酷音
+---
+transition: slide-up
 ---
 
 ## 什麼是「編譯」？
@@ -619,9 +648,53 @@ sudo update-icon-caches /usr/share/icons/*
 ```
 
 ---
+layout: two-cols
+layoutClass: gap-x-12
+---
 
 ## 安裝輝達驅動
 
+- 找到驅動版本，但不要用 .run  安裝，使用 apt 
+
+```bash
+ubuntu-drivers devices
+
+```
+
+::right::
+
+![search man](./img/2026-05-16-15-14-48.png)
+
+
+---
+
+## 試裝我的電腦
+
+```bash
+bm4ltb@BM5642:~$ ubuntu-drivers devices
+udevadm hwdb is deprecated. Use systemd-hwdb instead.
+== /sys/devices/pci0000:00/0000:00:01.0/0000:01:00.0 ==
+modalias : pci:v000010DEd00002487sv000019DAsd00004630bc03sc00i00
+vendor   : NVIDIA Corporation
+model    : GA104 [GeForce RTX 3060]
+driver   : nvidia-driver-595-server - distro non-free
+driver   : nvidia-driver-535-open - distro non-free
+driver   : nvidia-driver-535-server-open - distro non-free
+driver   : nvidia-driver-595-server-open - distro non-free
+driver   : nvidia-driver-580-server - distro non-free
+driver   : nvidia-driver-535-server - distro non-free
+driver   : nvidia-driver-580 - distro non-free
+driver   : nvidia-driver-580-open - distro non-free
+driver   : nvidia-driver-535 - distro non-free
+driver   : nvidia-driver-470 - distro non-free
+driver   : nvidia-driver-595 - distro non-free
+driver   : nvidia-driver-470-server - distro non-free
+driver   : nvidia-driver-595-open - distro non-free recommended
+driver   : nvidia-driver-580-server-open - distro non-free
+driver   : xserver-xorg-video-nouveau - distro free builtin
+```
+
+重開機後跑 `nvidia-smi` 看到狀態表格就代表裝成功了。
 ---
 
 # 如何移機
@@ -631,6 +704,13 @@ sudo update-icon-caches /usr/share/icons/*
   - 取決你使用的 CPU 晶片
     - M 系列晶片：[Asahi Linux](https://asahilinux.org)
     - intel :和一般筆電安裝流程一樣
+---
+layout: quote
+---
+
+## 我怕我的電腦壞掉
+
+##### ~~那就不要怕~~
 
 ---
 layout: intro
