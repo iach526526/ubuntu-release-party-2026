@@ -43,5 +43,5 @@ jobs:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
           external_repository: iach526526/slide.iach.cc
           publish_branch: gh-pages
-          publish_dir: ./dist
+          publish_dir: ./ubuntu-party-2026/dist
           destination_dir: ubnparty2026
