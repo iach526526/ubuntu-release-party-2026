@@ -9,10 +9,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ubuntu-party-2026
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v5
@@ -36,11 +32,14 @@ jobs:
       - name: Build Slidev
         run: pnpm slidev build --base /ubnparty2026/
 
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
+
       - name: Deploy to main repo
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.DEPLOY_KEY }}
-          external_repository: iach526526/ubuntu-release-party-2026
+          external_repository: iach526526/slide.iach.cc
           publish_branch: gh-pages
-          publish_dir: ubuntu-party-2026/dist
+          publish_dir: ./dist
           destination_dir: ubnparty2026
